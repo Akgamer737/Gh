@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotated Fullscreen Video</title>
+  <style>
+    /* Reset body and html styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    /* Fullscreen and rotated video container */
+    .video-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg); /* Rotates the video 90 degrees */
+      width: 100vh; /* Match height for fullscreen */
+      height: 100vw; /* Match width for fullscreen */
+      overflow: hidden;
+    }
+
+    /* iframe styling */
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe src="https://geo.dailymotion.com/player.html?video=x99xwg6" 
+            allowfullscreen 
+            title="Dailymotion Video Player" 
+            allow="web-share">
+    </iframe>
+  </div>
+</body>
+</html>

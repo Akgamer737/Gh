@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rotated Fullscreen Video</title>
+  <title>Medium Rotated Video</title>
   <style>
     /* Reset body and html styles */
     html, body {
@@ -14,14 +14,15 @@
       background: #000;
     }
 
-    /* Fullscreen and rotated video container */
+    /* Centered and rotated video container */
     .video-container {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(90deg); /* Rotates the video 90 degrees */
-      width: 100vh; /* Match height for fullscreen */
-      height: 100vw; /* Match width for fullscreen */
+      width: 70%; /* Medium size width */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 500px; /* Maximum size for medium video */
       overflow: hidden;
     }
 
